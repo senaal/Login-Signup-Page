@@ -4,7 +4,11 @@ body
     color: rgb(116, 45, 45);
     font-size: 9pt;
     background-image: url("background.jpg");
- 
+}
+
+a  {
+    color:  rgb(116, 45, 45);
+    font-weight: bold;
 }
 
 .cloud1 {
@@ -45,158 +49,149 @@ body
 }
 
 @keyframes gezinti{
-
     0% { opacity: 0; margin-left: 0%;}
-    
     50% { opacity: 40%; margin-left: 35%;}
     100% { opacity: 0; margin-left: 70%;}
 }
 
 
 .outerbox {
-    height:80vh;
-
-    width: 40%;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 5%;
+    height:40vw;
+    width: 40vw;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    margin-top: 5vw;
     background-color: rgb(116, 45, 45);
     overflow: hidden;
-    
-}
-.outerbox .innerbox {
-    height:78vh;
-    background-color: rgb(248, 182, 196);
-    margin-top: 1%;
-    margin-bottom: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
-
+    position: relative; 
 }
 
-.innerbox #head {
-    font-size: 5vh;
-    padding-top: 5vh;
+.outerbox > * {
+    position: absolute;
+}
+  
+
+.innerbox {
+    display: block;
     text-align: center;
-    height: 5vh;
+
+    height:39vw;
+    width: 39vw;
+    margin: 0.5vw;
+    background-color: rgb(248, 182, 196);
+}
+
+#head {
+    font-size: 3vw;
+    text-align: center;
+    height: 5vw;
     font-weight: bold;
     margin-bottom: auto;
-
+    margin-top: 1vw;
+    margin-left: auto;
+    margin-right: auto;
 }
-.innerbox #fname {
-    border-radius: 10px;
+
+#forms {
+    display: inline-block;
+    font-size: 1vw;
+    border-radius: 1vw;
     text-align: center;
-    width:80%;
-    height: 3vh;
-    margin-left: 10%;
-    margin-right: 10%;
+    height: 2vw;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vw;
     color:#dadada;
-    margin-top: 5vh;
 }
 
-.innerbox #lname{
-    border-radius: 10px;
+#forms:hover {
     text-align: center;
-    width:80%;
-    height: 3vh;
-    margin-top: 5vh;
-    margin-left: 10%;
-    margin-right: 10%;
-    color:#dadada;
-
-}
-
-#fname:hover {
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     transform: scale(1.1);
     background-color: #dadada;
     background: linear-gradient(30deg, rgb(241, 44, 110) 0%, rgb(233, 148, 162), rgb(241, 44, 110) 100%);
-
 }
 
-#fname:hover::placeholder{
+#forms:hover::placeholder{
     color: white;
     opacity: 1;
     text-align: center;
 }
 
-#lname:hover::placeholder{
-    color: white;
-    opacity: 1;
-}
-
-#lname:hover {
-    transform: scale(1.1);
-    background: linear-gradient(30deg, rgb(241, 44, 110) 0%, rgb(233, 148, 162), rgb(241, 44, 110) 100%);
+.centerblock {
+    margin-left: auto;
+    margin-right: auto;   
 }
 
 .forgot {
+    text-align: left;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    margin-top: 1vw;
     font-weight: bold;
-    font-size: larger;
-    margin-left: 10vh;
-    margin-top: 3vh;
+    font-size: 1vw;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 22vh;
+    grid-template-columns: 20vw 20vw;
+    grid-gap: 5vw;
 }
 
 .scale:hover {
     transform: scale(1.1); 
 }
 
-.forgot .remember {
-    font-weight: bold;
-    text-align: left;
-    margin-left: 1vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: -10vh;
+.checksize {
+    width: 1vw;
+    height: 1vw;
 }
+
 .social {
-    margin-right: 29.5vh;
-    margin-left: 29.5vh;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    position: relative;
+    margin-right: 14vw;
+    margin-left: 14vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
     display: grid;
-    grid-template-columns: 0fr 0fr 0fr;
-    grid-gap: 3vh;
+    grid-template-columns: 3vw 3vw 3vw;
+    grid-gap: 1vw;
 }
 
 .social #right{
     overflow: hidden;
     background-image: url("linkedin.png");
-    background-size: 4vh;
+    background-size: 2.5vw;
     background-repeat: no-repeat;
     background-position: center; 
     background-color: rgb(233, 148, 162);
     border-radius: 50%;
-    width: 5vh;
-    height: 5vh;
+    width: 3vw;
+    height: 3vw;
 }
 
 .social #left{    
     overflow: hidden;
     background-image: url("google.png");
-    background-size: 4vh;
+    background-size: 2.5vw;
     background-repeat: no-repeat;
     background-position: center; 
     background-color: rgb(233, 148, 162);
     border-radius: 50%;
-    width: 5vh;
-    height: 5vh;
+    width: 3vw;
+    height: 3vw;
 }
 
 .social #middle{    
     overflow: hidden;
     background-image: url("Facebook.png");
-    background-size: 2.2vh;
+    background-size: 1.4vw;
     background-repeat: no-repeat;
     background-position: center; 
     background-color: rgb(233, 148, 162);
     border-radius: 50%;
-    width: 5vh;
-    height: 5vh;
+    width: 3vw;
+    height: 3vw;
 }
 
 #right:hover {
@@ -219,23 +214,21 @@ span {
     vertical-align: middle;
   }
 
-.innerbox .enter {        
+.enter {        
+    font-size: 1vw;
     text-align: center;
     display: table;
-    margin-left: 29.5vh;
-    margin-right: 29.5vh;
+    margin-left: 14vw;
+    margin-right: 14vw;
     border-radius: 40px;
     background: rgb(233, 148, 162);
-    margin-bottom: 5%;
     border: 1px solid rgb(116, 45, 45);
     animation-name: glow;
     animation-duration: 20s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-    width: 21vh;
-    height: 5vh;
-
-    
+    width: 11vw;
+    height: 3vw; 
 }
 
 @keyframes glow{
@@ -286,5 +279,25 @@ span {
         margin-top: -100px;
         padding-bottom: 20px;
     }
-    
+}
+
+.noaccount {
+    text-align: left;
+    font-size: 1vw;
+    margin-top: 8vw;
+    margin-left: 2vw;
+}
+
+.terms {
+    text-align: left;
+    font-size: 1vw;
+    margin-top: 1vw;
+    margin-left: 2vw;
+}
+
+.already {
+    text-align: left;
+    font-size: 1vw;
+    margin-top: 4vw;
+    margin-left: 2vw;
 }
