@@ -1,0 +1,303 @@
+body
+{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: rgb(116, 45, 45);
+    font-size: 9pt;
+    background-image: url("background.jpg");
+}
+
+a  {
+    color:  rgb(116, 45, 45);
+    font-weight: bold;
+}
+
+.cloud1 {
+    position: absolute;
+    overflow: hidden;
+    margin-left: 0%;
+    margin-top: -10%;
+    background-image: url("cloud1.png");
+    opacity: 0%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 50vh;
+    max-width: 100%;
+    height: 50vh;
+    animation-name: gezinti;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+
+.cloud2 {
+    position: absolute;
+    overflow: hidden;
+    margin-left: 0%;
+    margin-top: -5%;
+    background-image: url("cloud2.png");
+    opacity: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 50vh;
+    max-width: 100%;
+    height: 50vh;
+    animation-name: gezinti;
+    animation-delay: 10s;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes gezinti{
+    0% { opacity: 0; margin-left: 0%;}
+    50% { opacity: 40%; margin-left: 35%;}
+    100% { opacity: 0; margin-left: 70%;}
+}
+
+
+.outerbox {
+    height:40vw;
+    width: 40vw;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    margin-top: 5vw;
+    background-color: rgb(116, 45, 45);
+    overflow: hidden;
+    position: relative; 
+}
+
+.outerbox > * {
+    position: absolute;
+}
+  
+
+.innerbox {
+    display: block;
+    text-align: center;
+
+    height:39vw;
+    width: 39vw;
+    margin: 0.5vw;
+    background-color: rgb(248, 182, 196);
+}
+
+#head {
+    font-size: 3vw;
+    text-align: center;
+    height: 5vw;
+    font-weight: bold;
+    margin-bottom: auto;
+    margin-top: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#forms {
+    display: inline-block;
+    font-size: 1vw;
+    border-radius: 1vw;
+    text-align: center;
+    height: 2vw;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vw;
+    color:#dadada;
+}
+
+#forms:hover {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    transform: scale(1.1);
+    background-color: #dadada;
+    background: linear-gradient(30deg, rgb(241, 44, 110) 0%, rgb(233, 148, 162), rgb(241, 44, 110) 100%);
+}
+
+#forms:hover::placeholder{
+    color: white;
+    opacity: 1;
+    text-align: center;
+}
+
+.centerblock {
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.forgot {
+    text-align: left;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    margin-top: 1vw;
+    font-weight: bold;
+    font-size: 1vw;
+    display: grid;
+    grid-template-columns: 20vw 20vw;
+    grid-gap: 5vw;
+}
+
+.scale:hover {
+    transform: scale(1.1); 
+}
+
+.checksize {
+    width: 1vw;
+    height: 1vw;
+}
+
+.social {
+    position: relative;
+    margin-right: 14vw;
+    margin-left: 14vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    display: grid;
+    grid-template-columns: 3vw 3vw 3vw;
+    grid-gap: 1vw;
+}
+
+.social #right{
+    overflow: hidden;
+    background-image: url("linkedin.png");
+    background-size: 2.5vw;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-color: rgb(233, 148, 162);
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+}
+
+.social #left{    
+    overflow: hidden;
+    background-image: url("google.png");
+    background-size: 2.5vw;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-color: rgb(233, 148, 162);
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+}
+
+.social #middle{    
+    overflow: hidden;
+    background-image: url("Facebook.png");
+    background-size: 1.4vw;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-color: rgb(233, 148, 162);
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+}
+
+#right:hover {
+    transform: scale(1.1); 
+    background-color: rgb(168, 104, 114);
+}
+
+#middle:hover {
+    transform: scale(1.1);
+    background-color: rgb(168, 104, 114); 
+}
+
+#left:hover {
+    transform: scale(1.1); 
+    background-color: rgb(168, 104, 114);
+}
+
+span {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+.enter {        
+    font-size: 1vw;
+    text-align: center;
+    display: table;
+    margin-left: 14vw;
+    margin-right: 14vw;
+    border-radius: 40px;
+    background: rgb(233, 148, 162);
+    border: 1px solid rgb(116, 45, 45);
+    animation-name: glow;
+    animation-duration: 20s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    width: 11vw;
+    height: 3vw; 
+}
+
+@keyframes glow{
+    from{
+        background: rgb(233, 148, 162);
+    }
+    to{
+        background: rgb(255, 255, 255);
+    
+    }
+}
+
+.enter:hover {
+    background: rgb(241, 44, 110);
+   transform: scale(1.1); 
+}
+
+.sheep {
+    position: absolute;
+    transform: scaleX(-1);
+    overflow: hidden;    
+    opacity: 70%;
+    background-image: url("sheep.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 9vh;
+    max-width: 100%;
+    height: 9vh;   
+    
+}
+.sheep:hover {
+    animation-name: zipzip;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    margin-top: -50px;
+    padding: 30px;
+    color:rgb(116, 45, 45);
+}
+
+@keyframes zipzip {
+    from{
+        margin-top: -50px;
+        padding-bottom: 0px;
+    }
+
+    to{
+        margin-top: -100px;
+        padding-bottom: 20px;
+    }
+}
+
+.noaccount {
+    text-align: left;
+    font-size: 1vw;
+    margin-top: 8vw;
+    margin-left: 2vw;
+}
+
+.terms {
+    text-align: left;
+    font-size: 1vw;
+    margin-top: 1vw;
+    margin-left: 2vw;
+}
+
+.already {
+    text-align: left;
+    font-size: 1vw;
+    margin-top: 4vw;
+    margin-left: 2vw;
+}
