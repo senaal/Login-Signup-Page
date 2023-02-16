@@ -1,5 +1,7 @@
-
 import React from "react";
+import { Link } from "react-router-dom";
+
+import '../style.css';
   
 const Register = () => {
   return (
@@ -29,7 +31,7 @@ const Register = () => {
         </form></div>
       <div className="terms">
         <label>
-          <input type="checkbox" defaultChecked="checked" name="remember" />I accept <a href="https://www.lipsum.com/feed/html" target="_blank" rel="noopener noreferrer">Term of Use</a> &amp; <a href="https://www.lipsum.com/feed/html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+          <input type="checkbox" defaultChecked="checked" name="remember" />I accept <Link to="/loremipsum">Term of Use</Link> &amp; <Link to="/loremipsum">Privacy Policy</Link>
         </label>
       </div>
       <div className="centerblock"> 
@@ -43,7 +45,7 @@ const Register = () => {
         <div className="enter"><span> Sign Up</span></div>
       </div>
       <div className="already">
-        <div>If you already have a sheep <a href="./App.js">Sign In</a></div>
+        <div>If you already have a sheep <Link to="/login">Sign In</Link></div>
       </div>
     </div>
   </div>

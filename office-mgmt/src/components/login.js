@@ -1,5 +1,8 @@
 import React from "react";
-  
+import { Link } from "react-router-dom";
+
+import '../style.css';
+
 const Login = () => {
   return (
     <div>
@@ -41,7 +44,7 @@ const Login = () => {
             <div className="enter"><span> Sign in</span></div>  
           </div>
           <div className="noaccount">
-            <div>If you don't have a sheep yet  <a href="./Register.js">Sign Up</a></div>
+            <div>If you don't have a sheep yet  <Link to="/register">Sign Up</Link></div>
           </div>
         </div>
       </div>     
