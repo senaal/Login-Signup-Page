@@ -16,10 +16,13 @@ const Layout = () => {
             <Link to="/register">Register</Link>
           </li>
         </ul>
+        <div className="cloud1" />
+        <div className="cloud2" />
       </nav>
 
       <Outlet />
     </>
+    
   )
 };
 

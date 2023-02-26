@@ -10,8 +10,7 @@ const Login = () => {
         <link rel="stylesheet" href="style.css" />
         <title>Login Page</title>
         <link rel="icon" type="image/x-icon" href="sheep2.png" />
-        <div className="cloud1" />
-        <div className="cloud2" />
+        
       </header>
       <div className="outerbox">
         <div className="innerbox">

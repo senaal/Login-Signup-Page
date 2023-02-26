@@ -13,6 +13,7 @@ a  {
 
 .cloud1 {
     position: absolute;
+    pointer-events: none;
     overflow: hidden;
     margin-left: 0%;
     margin-top: -10%;
@@ -24,15 +25,16 @@ a  {
     width: 50vh;
     max-width: 100%;
     height: 50vh;
-    animation-name: gezinti;
+    animation-name: gezinti1;
     animation-duration: 50s;
     animation-iteration-count: infinite;
 }
 
 .cloud2 {
     position: absolute;
+    pointer-events: none;
     overflow: hidden;
-    margin-left: 0%;
+    margin-left: -20%;
     margin-top: -5%;
     background-image: url("photos/cloud2.png");
     opacity: 0;
@@ -42,17 +44,24 @@ a  {
     width: 50vh;
     max-width: 100%;
     height: 50vh;
-    animation-name: gezinti;
-    animation-delay: 10s;
-    animation-duration: 50s;
+    animation-name: gezinti2;
+    animation-duration: 80s;
     animation-iteration-count: infinite;
 }
 
-@keyframes gezinti{
+@keyframes gezinti1{
     0% { opacity: 0; margin-left: 0%;}
     50% { opacity: 40%; margin-left: 35%;}
     100% { opacity: 0; margin-left: 70%;}
 }
+
+@keyframes gezinti2{
+    0% { opacity: 0; margin-left: -20%;}
+    50% { opacity: 40%; margin-left: 35%;}
+    100% { opacity: 0; margin-left: 70%;}
+}
+
+
 
 
 .outerbox {

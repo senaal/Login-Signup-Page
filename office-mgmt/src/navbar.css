@@ -4,11 +4,11 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow:hidden;
   background-color: #dadada;
   background: linear-gradient(90deg, rgb(241, 44, 110) 0%, rgb(233, 148, 162) 100%);
-  position: fixed;
-  opacity: 60%;  
+  position: absolute;
+  opacity: 100%;  
   top: 0;
   width: 100%;
 }

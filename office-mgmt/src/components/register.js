@@ -9,8 +9,6 @@ const Register = () => {
   <link rel="stylesheet" href="style.css" />
   <title>Register</title>
   <link rel="icon" type="image/x-icon" href="sheep2.png" />
-  <div className="cloud1" />
-  <div className="cloud2" />
   <div className="outerbox">
     <div className="innerbox">
       <div id="head">SIGN UP</div>
